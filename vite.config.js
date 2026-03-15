@@ -4,7 +4,7 @@ import legacy from '@vitejs/plugin-legacy';
 
 export default defineConfig({
   // 基础路径，GitHub Pages 需要设置为仓库名
-  base: './',
+  base: '/lunch-workout-pwa/',
 
   // 入口配置
   build: {
