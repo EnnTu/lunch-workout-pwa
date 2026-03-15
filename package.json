@@ -1,0 +1,40 @@
+{
+  "name": "lunch-workout-pwa",
+  "version": "1.0.0",
+  "description": "午间铁馆 - 智能周期化训练 PWA",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "setup": "node scripts/setup.js",
+    "predeploy": "node scripts/deploy-check.js && npm run build",
+    "deploy:gh": "gh-pages -d dist",
+    "deploy:vercel": "vercel --prod",
+    "lint": "eslint src --ext .js",
+    "format": "prettier --write \"src/**/*.js\""
+  },
+  "keywords": [
+    "pwa",
+    "workout",
+    "fitness",
+    "training"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^5.3.0",
+    "eslint": "^8.57.0",
+    "gh-pages": "^6.1.1",
+    "prettier": "^3.2.5",
+    "terser": "^5.29.0",
+    "vite": "^5.1.0",
+    "vite-plugin-pwa": "^0.19.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
